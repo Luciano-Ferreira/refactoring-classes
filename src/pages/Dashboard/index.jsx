@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-// import Header from '../../components/Header';
+import Header from '../../components/Header';
 import api from '../../services/api';
 import Food from '../../components/Food';
 import ModalAddFood from '../../components/ModalAddFood';
@@ -89,7 +89,7 @@ class Dashboard extends Component {
 
     return (
       <>
-        {/*<Header openModal={this.toggleModal} />*/}
+        <Header openModal={this.toggleModal} />
         <ModalAddFood
           isOpen={modalOpen}
           setIsOpen={this.toggleModal}
