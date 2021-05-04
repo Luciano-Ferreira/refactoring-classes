@@ -39,7 +39,7 @@ export default function Food({ food,  handleEditFood,  handleDelete }:FoodProps)
 
 
   return (
-    <Container available={available}>
+    <Container available={isAvailable}>
       <header>
         <img src={food.image} alt={food.name} />
       </header>
